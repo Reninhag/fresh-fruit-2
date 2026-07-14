@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(255, 83, 45);
+  background: linear-gradient(90deg, #ed8f83 0%, #fb553f 100%);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+span.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#letra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  color: #f56e5b;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+.button {
+  background-color: #fff;
+  color: #f56e5b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 50%;
+  height: auto;
+  max-height: fit-content;
+}
+
+.imagem {
+  padding: 20px;
+  width: 100%;
+}
+.texto {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 60px;
+  width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+.subtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  height: 10px;
+}
+
+img {
+  height: 450px;
+}
+
+/* Responsividade para telas pequenas (mobile) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    height: auto;
+    padding: 10px 12px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  .sections {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .texto {
+    padding: 20px 12px;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-top: 6px;
+  }
+
+  .subtitulo {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+    height: auto;
+  }
+
+  img,
+  .frutas {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .button {
+    padding: 8px 14px;
+  }
+
+  #letra {
+    height: 40px;
+    width: 40px;
+    font-size: 1.4em;
+  }
+}
